@@ -11,6 +11,7 @@ p{
   margin-top: -11px;
   padding: 5px 0px;
   padding-bottom: 4px;
+  width: 100vw;
 }
 
 
@@ -40,13 +41,14 @@ p{
   margin-left: 10px;
   /* background-color: lightblue; */
   justify-content: left;
-  width: 260px;
+  width: 320px;
+  min-width: 260;
   height: 100%;
   font-family: 'Roboto Mono', monospace;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   font-size: 20px;
-  flex-shrink: 0;
+  flex-shrink: 1;
   cursor: pointer;
 }
 
@@ -62,7 +64,7 @@ p{
 }
 
 .nameText:hover {
-  letter-spacing: 0.3em; 
+  letter-spacing: 0.15em; 
   transform: translateX(-0.2em); 
 }
 
@@ -73,10 +75,11 @@ p{
   /* background-color: lightblue; */
   padding: 0px;
   justify-content: right;
-  width: 500px;
+  width: 450px;
   /* padding-right: 40px; */
-  min-width: 330px;
+  min-width: 400px;
   height: auto;
+  flex-shrink: 0;
 }
 
 
@@ -117,6 +120,33 @@ p{
   margin-top: -3px;
 }
 
+
+@media screen and (max-width: 456px){
+  .name{
+    width: 270px;
+    margin: 0px;
+    
+    
+  }
+  .nameText{
+    margin-bottom: 0px;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #6E07F3;
+    transition: transform 0.5s ease-out,
+                letter-spacing 0.5s;
+  }
+  
+  .nameText:hover {
+    letter-spacing: 0.1em; 
+    transform: translateX(-0.2em); 
+  }
+
+  
+  
+}
 
 
 

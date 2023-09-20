@@ -7,11 +7,16 @@
   font-family: 'Roboto Mono', monospace;
   font-family: 'Roboto Slab', serif;
   font-size: 20px;
-  width: 100vw;
+  width:100vw;
   height: 60px;
   border-radius: 20px;
 }
 
 .heartImg{
   width: 40px;
+}
+
+@media screen and (max-width:673px) {
+  
+  
 }

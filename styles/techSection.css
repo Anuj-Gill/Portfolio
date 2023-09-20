@@ -5,6 +5,7 @@
   justify-content: center;
   padding-top: 40px;
   margin-bottom: 100px;
+  width: 100vw;
 
 }
 
@@ -24,5 +25,31 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 20px;
-  padding-left: 100px;
+  padding-left: 60px;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  transition: transform 0.75s; /* Add a smooth transition for the rotation */
+}
+
+/* Rotate the image on hover */
+.logo img:hover {
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width:600px) {
+
+  .techGrid{
+    width: 80%;
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px;
+  }
 }
