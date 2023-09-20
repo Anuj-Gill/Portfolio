@@ -1,0 +1,117 @@
+.preloader{
+  display: flex;
+  background-color: black;
+  height: 110vh;
+  width: 110vw;
+  position:fixed;
+  z-index: 100;
+  margin: -30px;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.easingOut{
+  opacity: 0;
+}
+
+.preloadertext{
+  color: rgb(255, 255, 255);
+  z-index: 101;
+  font-family: 'Croissant One', cursive;
+  font-weight: 600;
+  font-size: 70px;
+  opacity: 0; /* Initial opacity value */
+  transition: opacity 1.5s ease-in-out;
+}
+
+.show{
+  opacity: 1;
+}
+
+.show2{
+  opacity: 0;
+}
+
+.aboutSection{
+  /* background-color: pink; */
+  width: 100vw;
+  height: auto;
+  /* position:absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.BoyImage{
+  width: 250px;
+  margin-bottom: 25px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 20px rgba(0,0,0, 0.3);
+  transition: box-shadow 0.25s;
+}
+
+.BoyImage:hover{
+  box-shadow: 0px 0px 40px rgba(110, 7, 243,0.8);
+}
+
+.aboutTextDiv{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  /* flex-shrink: 0; */
+  /* flex-wrap: wrap; */
+}
+
+.mainText{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 70px;
+  color: rgb(0, 5, 58);
+  margin-bottom: 10px;
+}
+
+.deviceImg{
+  width: 500px;
+  margin-bottom: -4px;
+}
+
+.subTextDiv{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Slab', serif;
+  font-size: 21px;
+  font-weight: 400;
+  padding-right: 100px;
+  padding-left: 100px;
+  background-color: rgb(110, 7, 243);
+  width: auto;
+  height: auto;
+  border-radius: 50px;
+  overflow: hidden;
+  text-align: center;
+  margin-left: -19px;
+  margin-bottom: 40px;
+}
+
+.subText{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Slab', serif;
+  width: 700px;
+  text-align: center;
+  min-width: 200px;
+  color: white;
+  
+}
+
+p{
+  text-wrap: wrap;
+}

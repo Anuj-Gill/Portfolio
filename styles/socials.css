@@ -1,0 +1,28 @@
+.socialsContainer{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitterImg{
+  width: 120px;
+}
+
+.gitHubImg{
+  width: 80px
+}
+
+.logo{
+  margin: 20px;
+}
+
+
+.logo img {
+  transition: transform 0.75s; /* Add a smooth transition for the rotation */
+}
+
+/* Rotate the image on hover */
+.logo img:hover {
+  transform: rotate(360deg);
+}

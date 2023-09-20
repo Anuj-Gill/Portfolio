@@ -1,0 +1,123 @@
+
+
+
+p{
+  display: inline-block;
+}
+
+.container-fluid{
+  border-bottom: #6E07F3 solid 2px;
+  background-color: white;
+  margin-top: -11px;
+  padding: 5px 0px;
+  padding-bottom: 4px;
+}
+
+
+/* .header{
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 70px;
+  background-color: pink; 
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -10px;
+  margin-top: -10px;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-bottom: rgba(135, 74, 215,1) solid 2px;
+  z-index: 10;
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+} */
+
+.name{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  /* background-color: lightblue; */
+  justify-content: left;
+  width: 260px;
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 20px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.nameText{
+  margin-bottom: 0px;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #6E07F3;
+  transition: transform 0.5s ease-out,
+              letter-spacing 0.5s;
+}
+
+.nameText:hover {
+  letter-spacing: 0.3em; 
+  transform: translateX(-0.2em); 
+}
+
+
+
+.menu{
+  display: flex;
+  /* background-color: lightblue; */
+  padding: 0px;
+  justify-content: right;
+  width: 500px;
+  /* padding-right: 40px; */
+  min-width: 330px;
+  height: auto;
+}
+
+
+.about,.techStack,.projects,.contact{
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Slab', serif;
+  transition: font-weight 0.15s,
+              border-bottom 0.15s;
+  cursor: pointer;
+  margin-right: 30px;
+  padding: 0px;
+}
+
+
+
+.contact{
+  margin-right: 20px;
+}
+
+.about:hover,.techStack:hover,.projects:hover,.contact:hover{
+  font-weight: 600;
+  border-bottom:#6E07F3 solid 3px;
+  padding: -8px;
+  
+}
+
+.aboutDiv,.techStackDiv,.projectsDiv,.contactDiv{
+  transition: margin-top 0.15s;
+  flex-shrink: 0;
+  font-size: 20px;
+  font-weight: 600;
+  
+  
+
+}
+
+.aboutDiv:active,.techStackDiv:active,.projectsDiv:active,.contactDiv:active{
+  margin-top: -3px;
+}
+
+
+
+
+
